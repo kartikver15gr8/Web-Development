@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math object in javascript</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hello and welcome to the introduction of 'Math object' in javascript</h2>
+    </div>
+    <script>
+        console.log("Hello world");
+        // printing the Math objects
+        let m = Math;
+        // Printing the constants of Math objects
+        console.log(m);
+        console.log("The value of Math.E is ", Math.E);
+        console.log("The value of Math.LN2 is ", Math.LN2);
+        console.log("The value of Math.LN10 is ", Math.LN10);
+        console.log("The value of Math.LOG2E is ", Math.LOG2E);
+        console.log("The value of Math.PI is ", Math.PI);
+        console.log("The value of Math.SQRT1_2 is ", Math.SQRT1_2);
+        console.log("The value of Math.SQRT2 is ", Math.SQRT2);
+
+        // Printing the functions using Math objects
+        let a = 4.45; 
+        let b = 9.8;
+        console.log("The value of 'a' and 'b' is", a,b);
+        console.log("The roundoff value of 'a' and 'b' is", Math.round(a),Math.round(b));
+        console.log("The value of 'a' raised to the power 'b' is", Math.pow(a,b));
+        console.log("The value of 'a' squareroot and 'b' squareroot are ", Math.sqrt(a),Math.sqrt(b));
+        console.log("The value of squareroot of 35 is",Math.sqrt(35));
+        console.log("The value of Square of 35 is",Math.pow(35,2));
+
+        // Ceil and floor functions
+        console.log("The rounded-up value of 5.984558 using 'ceil' is ", Math.ceil(5.984558));  // So basically 'ceil' is used to find the rounded up value of any given number i.e the closest value to it's nearest greater integer
+        
+        console.log("The rounded-down value of 5.984558 using 'ceil' is ", Math.floor(5.984558)); // So basically 'floor' is used to find the rounded down value of any given number i.e the closest value to it's nearest lower integer
+
+        // Absolute function
+        console.log("The absolute value of 450.4587 is ", Math.abs(450.4587));
+        console.log("The absolute value of -450.4587 is ", Math.abs(-450.4587));
+        // So basically the absolute function is used to determine the magnitude or absolute value of any given number i.e if we will use 'absolute' function to find the absolute value of any positive number, no surprise it will return the same value but if we will use 'absolute' function to find the absolute value of any negative number then it will return the magnitude of that number i.e the same positive value
+
+        // Trigonometric funtions
+        console.log("The value of sin(PI) is", Math.sin(Math.PI));
+        console.log("The estimated value of sin(PI) is", Math.round(Math.sin(Math.PI)));
+        console.log("The value of sin(PI/2) is", Math.sin(Math.PI/2));
+        console.log("The value of sin(PI/4) is", Math.sin(Math.PI/4));
+        console.log("The value of sin(PI/3) is", Math.sin(Math.PI/3));
+        console.log("The value of cos(PI/3) is", Math.cos(Math.PI/3));
+        console.log("The value of cos(PI/4) is", Math.cos(Math.PI/4));
+        console.log("The value of cos(PI/2) is", Math.cos(Math.PI/2));
+        console.log("The estimated value of cos(PI/2) is", Math.round(Math.cos(Math.PI/2)));
+
+ 
+ 
+
+
+// E: 2.718281828459045
+// LN2: 0.6931471805599453
+// LN10: 2.302585092994046
+// LOG2E: 1.4426950408889634
+// LOG10E: 0.4342944819032518
+// PI: 3.141592653589793
+// SQRT1_2: 0.7071067811865476
+// SQRT2: 1.4142135623730951
+        
+    </script>
+</body>
+</html>

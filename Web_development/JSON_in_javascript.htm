@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JSON in javascript</title>
+    <style>
+        .JSON h1 {
+            color: black;
+            border: 4px solid darkblue;
+            padding: 5px;
+            background-color: #ee3972;
+            display: flex;
+            justify-content: center;
+            border-radius: 60px;
+            align-items: center;
+        }
+        .JSON p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: coral;
+            color: darkblue;
+            font-weight: bolder;
+            font-size: xx-large;
+            border-radius: 55px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="JSON">
+        <h1>Hello and welcome to the tutorial of JSON in javascript</h1>
+        <p>JSON stands for "javascript object notation"</p>
+    </div>
+    <script>
+        console.log("Hello, how you doin!");
+        let jsonobj = {
+            name: 'kartikey verma',
+            company: 'Apple.Co',
+            salary: 'Inr 58,57,400/-'
+        }
+        console.log(jsonobj);
+        let myjsonstr = JSON.stringify(jsonobj);
+        console.log(myjsonstr);
+        myjsonstr = myjsonstr.replace('Apple.Co', 'Google')
+        myjsonstr = myjsonstr.replace('Inr 58,57,400/-', 'Inr 68,45,782.22/-')
+        console.log(myjsonstr);
+
+        let new_myjsonobj = JSON.parse(myjsonstr);
+        console.log(new_myjsonobj);
+      
+
+
+    </script>
+</body>
+
+</html>

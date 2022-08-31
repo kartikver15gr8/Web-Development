@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes and conditionals in javascript</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <h2>Scopes</h2>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+        </ul>
+    </div>
+    <script>
+
+        //  SCOPE
+
+        // var string1 = "hello this is the first string!"
+        // console.log(string1)
+
+        // // Another way to assign or declare any variable is the "let" method as shown below
+        // let a = "Toh kese hain aap log!"    // BUT remember that the variable which is assigned by using let method will only be valid upto the certain block of it in which we want that variable to work or in block we want to use that variable, that means that outside the block there is no meaning of that variable in the javascript!!
+
+        // // Let see an eg of it
+
+        // let u = "universal"
+        // {
+        //     let u = "umangasaur!"
+        //     console.log(u)
+        // }
+        //     console.log(u)
+        // // So basically as we know that as we assigned the "u" variable outside the block  "{}" which was having a value "universal" and we again assign the value of "u" in the block "{}" which is having a value "umangasaur!" so as we can see as we printed the value of u inside the block it showed us on the console "umangasaur!" but when we called the value of "u" outside the block it showed us "universal" hence we seen that the variable assigned inside the block using "let" method have no meaning outside the block!
+
+
+        // const c = "This is a constant and cannot be changed!"
+        // console.log(c)  // The value of a constant entity cannot be changed!
+        // // const c = "I'm trying to change This is a constant and cannot be changed!"
+
+
+        // CONDITIONALS
+
+        // let age = 44
+        // console.log(age)
+        // if (age > 21) {
+        //     console.log("You can marry legally")
+        // }
+        // else if(age == 44){
+        //     console.log("You are just an year apart to be of 45!")
+        // }
+        // else {
+        //     console.log("No, u re underaged")
+        // }
+
+        // SWITCH-CASE
+
+        let cappucino = 455
+        switch (cappucino) {
+            case 44:
+                console.log("We have 44 cappucino!")
+                break;
+            case 41:
+                console.log("We have 41 cappucino!")
+                break;
+            case 42:
+                console.log("We have 42 cappucino!")
+                break;
+            case 43:
+                console.log("We have 43 cappucino!")
+                break;
+            case 455:
+                console.log("We have 455 cappucino!")
+                break;
+            case 47:
+                console.log("We have 47 cappucino!")
+                break;
+
+            default:
+                console.log("We do not have cappucino but, We have latte!")
+                break;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

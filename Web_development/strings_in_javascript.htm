@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in javascripts</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="head">This is introduction of strings in javascripts</h2>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur libero inventore ducimus, laudantium consectetur facilis illo assumenda et, nesciunt est cumque. Veritatis eos tempore quasi, minus enim placeat animi numquam rem dolore vitae, iure rerum saepe accusantium, explicabo ex repellat alias? Tempora, illo at architecto laborum sint odio porro aspernatur aliquam inventore. Ullam fugit ad odit! Facilis consequatur repudiandae, tenetur fugiat ratione dolores incidunt eligendi officia excepturi? Exercitationem accusamus perferendis ratione obcaecati voluptatum sint reiciendis. Blanditiis necessitatibus rerum voluptatum, doloremque tempora enim sunt, harum ipsa voluptas numquam, officiis doloribus soluta repudiandae? Minus reprehenderit veritatis itaque odio illo!</p>
+    </div>
+    <script>
+        var single_quoted_string = 'hello! This is a single quoted string'
+        var double_quoted_string = "hello, This is a double quoted string"
+        var name = 'harry"s princess'
+        var channel = "harry's coding"
+        
+    // we may also define a variable without using var keyword because javascript is a very user friendly language so it will not mind these kinds of minor errors
+
+        employee =  " kartikey verma "
+        company = "Apple.Co "
+        preposition_string = "is the great sincere employee, working in the "
+
+        console.log(single_quoted_string)
+        console.log(double_quoted_string)
+        console.log(name)
+        console.log(channel)
+    
+    // The below is a template litral to declare strings
+
+        var temp = `${employee} is a very 'nice', "appreciable" and also ${preposition_string} ${company}`
+        console.log(temp)
+
+        
+        var len = employee.length;
+        console.log(`The length of the string employee is ${len}`)
+
+        // for concatenate of merge the above defined strings we may do
+        console.log(employee+preposition_string+company)
+
+    // escape sequence characters 
+        console.log("Hello world this is \nHarry!") // Here \n is an escape sequence character used for getting a next line
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors(pseudo selectors)</title>
+    
+    <style>
+        h1{
+            background-color: crimson;
+            color: yellow;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* This will give styling to every p which is contained by div or which is inside div */
+        /* div p{
+            text-align: center;
+            font-weight: bold;
+            background-color: yellowgreen;
+            color: yellow; */
+
+        /* This will give styling to that p, which is contained in that li which is inside div     */
+        /* div li p{
+            text-align: center;
+            font-weight: bold;
+            background-color: yellowgreen;
+            color: yellow; */
+
+        /* This will add styling to that p which is just after div      */
+        /* div + p{
+            text-align: center;
+            font-weight: bold;
+            background-color: yellowgreen;
+            color: yellow; */
+
+        /* This will add styling to that p only which is contained in div directly     */
+        /* div > p{
+            text-align: center;
+            font-weight: bold;
+            background-color: yellowgreen;
+            color: yellow;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors!!</h1>
+    <div class="container">
+        <p>hello how's it all going!</p>
+        <ul><li><p>hellos</p></li></ul>
+        <div class="baby">
+            <p>hello baby!</p>
+        </div>
+    </div>
+    <p>i'm not div</p>
+</body>
+</html>

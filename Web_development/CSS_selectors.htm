@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* Element selector */
+        p{
+            border: 4px solid cornflowerblue;
+        }
+        /* id selector */
+        #firstpara {
+            color: rgb(27, 85, 219);
+        }
+         /* Class selector */
+        .rdelement{
+           color: red;
+        }
+         /* Class selector */
+        .bluebg{
+            background-color: blue;
+        }
+        /* Element selector */
+        p{
+            color: blueviolet;
+        }
+        /* Grouping selector */
+        footer,span{
+            color: crimson;
+            background-color: darkblue;
+        }
+        /* Class selector */
+        .hlo{
+            color: darkblue;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Selectors in CSS</h2>
+    <p id="firstpara">This is a tutorial about CSS selectors</p>
+    <p id="secondpara" class="rdelement bluebg">This is a tutorial about CSS selectors</p>
+    <p>This is a tutorial about CSS selectors</p>
+    <span>hello this is a span under which i have written this statement</span>
+    <span id="span" class="hlo">hello this is a another span</span>
+    <p>This is a tutorial about CSS selectors</p>
+    <div>
+        <p>This is another tutorial</p>
+    </div>
+    <footer>This is footer</footer>
+    <span>hello</span>
+</body>
+
+</html>

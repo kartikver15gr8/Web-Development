@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascripts!</title>
+    
+    <style>
+       .container{
+           background-color: rgb(230, 164, 65);
+           border: 10px solid rosybrown;
+           
+       }
+       #head{
+           font-weight: bold;
+       }
+       #para{
+           font-style: italic;
+           color: royalblue;
+       }
+       #btn{
+           display: block;
+           margin: auto;
+           cursor: pointer;
+           padding: 5px;
+           color: royalblue;
+           background-color: salmon;
+           border: 2px solid brown;
+           border-radius: 55px;
+       }
+    </style>
+
+</head>
+<body>
+    <!-- So basically an event in Javascripts is basically an action that is fired or executed when the user want that action to get executed! -->
+    <div class="container">
+        <h3 id="head">Hello and welcome to the introduction of events in Javascripts!</h3>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, labore minima eligendi itaque praesentium amet eum nemo culpa dolore voluptates distinctio fugit neque ea aliquid, quibusdam facilis enim earum sequi eveniet, mollitia illo odit quia maiores autem? Porro eligendi quo officiis rerum? Quis, omnis consequuntur nisi dolore maxime corrupti totam! Nisi quibusdam harum laudantium nemo, consectetur numquam sint quos voluptate in delectus ratione doloremque blanditiis, dignissimos aspernatur sunt ducimus facere laborum necessitatibus facilis mollitia ipsum. Praesentium unde, ut sed recusandae libero obcaecati illum, impedit ipsa iure quam ducimus doloribus corrupti perferendis quaerat nostrum nobis porro odit. Sint ipsam praesentium obcaecati est corporis, hic animi minima quaerat repellat ipsa ullam eveniet iste rerum adipisci, eum laborum itaque illum quam et saepe sed! Ut in vitae qui dolore suscipit corrupti amet quo non numquam, voluptatum accusantium asperiores, esse quae assumenda! At rerum possimus dignissimos! Debitis dolor perferendis commodi, quod maxime nisi itaque molestiae reprehenderit laudantium unde placeat mollitia expedita doloremque cupiditate error, enim, iste sed ad! Labore, eveniet quam. Incidunt ex beatae a exercitationem pariatur quia accusamus odit illo numquam explicabo quos, architecto, quam esse mollitia dolores, fuga amet quas alias dolor sint excepturi et modi sit quaerat! Quasi deleniti est quos similique, error sint cupiditate sed molestiae reprehenderit adipisci quod! Iure ducimus, accusantium commodi accusamus perspiciatis et voluptate, possimus natus, nam dolorem hic consectetur quos unde! Ad, at. Laudantium perspiciatis facere dolore obcaecati debitis, sequi nemo harum sit quod. Natus et magnam quidem exercitationem optio ratione pariatur! Et quidem eligendi exercitationem, commodi corporis culpa recusandae, eaque ea dicta quas quaerat ullam asperiores eveniet necessitatibus amet officiis dolore quasi vero nihil. Adipisci atque repudiandae enim modi molestiae veniam voluptas, similique velit ab qui animi minus! Provident voluptas vitae accusamus debitis expedita. Consequuntur beatae cupiditate error nobis consectetur, quam dolor incidunt molestias repellat nostrum modi dolorem, saepe at ea adipisci molestiae cumque expedita praesentium repudiandae placeat pariatur, necessitatibus fuga mollitia ullam. Officiis ducimus facere at cumque quasi? Aperiam nobis iste quis itaque consequuntur nihil odit error. Ipsum facere id eius error, soluta distinctio labore possimus eum non expedita veniam assumenda asperiores maxime esse aut, perferendis quisquam omnis dolore perspiciatis! Nobis architecto magnam ipsa sapiente vitae sunt placeat, optio culpa molestiae accusantium quibusdam alias ratione quo, dolorum dignissimos molestias asperiores. Cum, veniam. Esse consectetur tempore dolor voluptatem nulla dolores cumque. Adipisci ad minus accusamus tempora quaerat veniam, voluptates explicabo et nemo nisi magni deleniti tenetur autem non recusandae modi perspiciatis error labore necessitatibus tempore officia! Quod ipsa ex alias, cupiditate perspiciatis reiciendis optio suscipit, consequatur quas laudantium dolore saepe odit illum hic labore magni quibusdam corporis delectus vero eum ut. Debitis nam at commodi aspernatur fugit obcaecati eum non? Sapiente suscipit ea repudiandae. Nostrum explicabo quaerat, maxime natus delectus quam suscipit blanditiis, ab, iusto ipsum dolor voluptas quasi iure et enim beatae modi eius non. Perferendis nesciunt laborum obcaecati quibusdam quo eveniet eius aliquid, aspernatur ab nostrum voluptas inventore ducimus voluptatem placeat iure nihil facilis quae officia a! Nemo nobis fuga culpa eveniet tempore.</p>
+    </div>
+    <button id="btn" onclick="toggle()">Show/Hide</button>
+    <script>
+    function toggle(){
+        let btn = document.getElementById('btn')
+        let para = document.getElementById('para')
+        if(para.style.display != 'none'){
+            para.style.display = 'none';     
+        }
+        else{
+            para.style.display = 'block';
+        }
+    }
+    </script>
+</body>
+</html>

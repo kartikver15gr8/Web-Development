@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid spanning</title>
+    <style>
+        .grid{
+            display: grid;
+            /* grid-template-columns: 1fr 4fr 4fr; */
+            grid-template-columns: repeat(4,1fr );
+            /* grid-gap: 2px; */
+            /* grid-gap: 1rem; */
+            grid-column-gap: 5rem;
+            grid-row-gap: 2rem;
+            
+        }
+        .box{
+            border: 4px solid brown;
+            background-color: burlywood;
+            margin: 2px;
+            padding: 20px;
+            /* border-radius: 5rem; */
+            border-radius: 5px;
+
+        }
+        .box:first-child{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is my 1 box</div>
+        <div class="box">This is my 2 box</div>
+        <div class="box">This is my 3 box</div>
+        <div class="box">This is my 4 box</div>
+        <div class="box">This is my 5 box</div>
+        <div class="box">This is my 6 box</div>
+        <div class="box">This is my 7 box</div>
+        <div class="box">This is my 8 box</div>
+        <div class="box">This is my 1 box</div>
+        <div class="box">This is my 2 box</div>
+        <div class="box">This is my 3 box</div>
+        <div class="box">This is my 4 box</div>
+        <div class="box">This is my 5 box</div>
+        <div class="box">This is my 6 box</div>
+        <div class="box">This is my 7 box</div>
+        <div class="box">This is my 8 box</div>
+        <div class="box">This is my 9 box</div>
+        <div class="box">This is my 10 box</div>
+        <div class="box">This is my 11 box</div>
+        <div class="box">This is my 12 box</div>
+        <div class="box">This is my 13 box</div>
+        <div class="box">This is my 14 box</div>
+        <div class="box">This is my 15 box</div>
+        <div class="box">This is my 16 box</div>
+        <div class="box">This is my 17 box</div>
+        <div class="box">This is my 18 box</div>
+        <div class="box">This is my 19 box</div>
+        <div class="box">This is my 20 box</div>
+        <div class="box">This is my 21 box</div>
+        <div class="box">This is my 22 box</div>
+        <div class="box">This is my 23 box</div>
+        <div class="box">This is my 24 box</div>
+        
+    </div>
+</body>
+</html>

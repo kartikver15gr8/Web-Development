@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions in javascripts</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Arrow functions in javascripts</h1>
+    <script>
+        // function greet(name){
+        //     console.log("Hello "+name);
+        //     console.log(`Hello ${name}, Here I'm using back ticks`);
+
+        // }
+        // greet('Avinash')
+
+    // Now by using Arrow functions I will show you how to write the above function.
+
+        //  let greet =(name)=> {
+           
+        //     console.log(`Hello ${name}, Here I'm using back ticks`);
+
+        // }
+
+    let obj = {
+        greeting : "good morning",
+        friends   : ['pooja','kunal','mukesh','gungun','priya','shreya','chunmun','sooraj','soumya'],
+        speak(){
+            this.friends.forEach((student)=>{
+                console.log("hello " + this.greeting + " dear " + student);
+            });
+        }
+    }
+    obj.speak();
+
+    
+
+        // let sum = (a,b)=>a+b;
+
+    // We use the 'Arrow' function in 'setInterval', 'setTimeout' methods and etc.
+
+        // greet();
+        // setInterval(() => {
+        //     console.log("Hello");
+            
+        // }, 3000);
+
+    </script>
+</body>
+</html>

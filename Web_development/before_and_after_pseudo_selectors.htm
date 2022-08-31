@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and fter pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body{
+            background-color: cadetblue;
+            color: cornsilk;
+
+            
+            
+        }
+        /* header::before{
+            content: "";
+            background: url('https://images.unsplash.com/photo-1490109875367-0dbd3c96fa1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+
+        } */
+        .navigation{
+            display: flex;    
+        }
+        li{
+            /* padding: 0px 20px; */
+            margin-right: 29px;
+            list-style: none;
+        }
+        li:hover{
+            color: darkslategrey;
+
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-left: 10px;
+            /* font-family: 'Bree Serif', serif; */
+            font-family: 'Poppins', sans-serif;
+            border: 4px solid rgb(54, 95, 93);
+            border-radius: 4px;
+        }
+        section::before{
+            content: "This is the before content!!";
+            color: rgb(58, 56, 56);
+            font-weight: bolder;
+            text-align: center;
+        }
+        section::after{
+            content: "This is the after content!!";
+            color: rgb(51, 50, 50);
+            font-weight: bolder;
+            text-align: center;
+        }
+        h2,p{
+            text-align: center;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">about</li>
+                <li class="item">shop now</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Welcome to my zone!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore explicabo itaque excepturi non exercitationem quam commodi esse provident quisquam! Suscipit est deleniti iste reprehenderit maxime ab atque fugiat quos aliquid a obcaecati soluta non voluptatum praesentium iure, ut dignissimos beatae ullam possimus. Dignissimos aspernatur officiis laudantium, eveniet culpa deleniti sunt enim quisquam nihil voluptates voluptatibus illo. Atque aut, officiis quasi amet quidem eius ducimus, repudiandae debitis exercitationem at sit, nesciunt vitae quae repellendus omnis cupiditate odio alias expedita error commodi. Modi velit corrupti eligendi incidunt voluptate excepturi cum aut fuga labore? Laborum magni iure amet iste.</p>
+        </section>
+    </header>
+</body>
+</html>

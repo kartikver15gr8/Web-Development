@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions in javascript !</title>
+    <style>
+        .headone {
+            display: block;
+            margin: auto;
+            width: 660px;
+            border: 4px solid cadetblue;
+            background-color: burlywood;
+            color: darkred;
+            border-radius: 5px;
+        }
+
+        .para {
+            display: flex;
+            text-align: center;
+            color: #804907;
+            border: 4px solid darkslateblue;
+            background-color: #ffe923;
+            border-radius: 6px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="headone">Welcome to the intro of string functions</h1>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos maxime tenetur aperiam
+            accusamus accusantium ea a voluptatem sapiente reprehenderit nam aliquid maiores aspernatur ipsum,
+            architecto magni suscipit porro ut, iste eligendi, autem officiis delectus! Fuga nobis sunt itaque fugit
+            deleniti odit asperiores. Quasi, cupiditate reprehenderit. Eveniet iure, fuga unde assumenda quae dolorem
+            fugit perspiciatis ex saepe deserunt perferendis natus quisquam dignissimos consequatur maxime? Voluptatibus
+            sit in quisquam non ducimus totam laboriosam quidem itaque molestiae iste incidunt obcaecati eius
+            consequuntur reprehenderit, earum et nulla dolorum adipisci maxime dolorem veritatis similique vel
+            accusantium natus. Quos cupiditate consequatur rerum quaerat?</p>
+    </div>
+    <script>
+        var str = "this is an artifact"
+        var upperstr = "THIS IS AN UPPERCASE STRING"
+        
+        console.log(str)
+        console.log(upperstr)
+
+    // Here we will see some of the string functions:
+    // Here is the "indexOf" function which is used to get the first occurance of any string in the defined string variable
+        var position = str.indexOf("is")
+        console.log(position)   // Here this will return the index of first occurance of "is" substring in the defined variable string "str"
+        position = str.lastIndexOf("is")
+        console.log(position)
+    // The slice, substr, and substring methods are used to print the sliced indices of any string
+        var substr = str.slice(0,6)
+        console.log(substr)
+
+    // The 'replace' method of string is used to replace any substring of a defined string
+        var replace = str.replace('artifact', 'airplane')
+        console.log(str)
+        console.log(replace)
+    
+    // Now we have the uppercase and lowercase methods in the methods of string
+        console.log(str.toUpperCase())
+        console.log(upperstr.toLowerCase())
+
+    // Now to concatenate any random string to a defined string we can also use this method called "concatenatin method"
+
+        var newstr = str.concat(' which is looking fabulous!')
+        console.log(newstr)
+
+        
+    </script>
+</body>
+
+</html>

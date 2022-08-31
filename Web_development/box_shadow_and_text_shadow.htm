@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        /* body{ */
+        /* background-color: rgb(8, 34, 105); */
+        /* } */
+        .container {
+            /* width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            border: 4px solid cadetblue;
+            border-radius: 5px; */
+            /* padding-top: 5px;
+            padding-left: 5px; */
+            /* padding: 5px; */
+            /* margin: auto;
+            text-align: center; */
+            display: flex;
+        }
+
+        .card {
+            margin: 15px;
+            border: 3px solid rgb(14, 87, 90);
+            padding: 4px;
+            color: darkblue;
+            /* background-color: coral; */
+            background-color: #73d2e2;
+            border-radius: 14px;
+            /* box-shadow: 5px 5px rgb(45 112 255);          box shadow */
+            /* box-shadow: 5px 5px 4px rgb(45 112 255);      box shadow with blur radius*/
+            /* box-shadow: 5px 5px 4px 10px rgb(45 112 255);     box shadow with blur and spread radius */
+            text-align: center;
+            /* box-shadow: 5px 5px 4px 10px rgba(45, 144, 250, 0.6);  here rgba (alpha) coloring is used where alpha decides the tranparency or darkness of color */
+
+
+            /* If we want to create shadows inside the boxes then we will use inset as used below 
+            box-shadow: inset -4px -10px 9px rgba(1 ,87 ,97, 0.527); */
+
+            /* This syntax is used to add multiple border 
+             box-shadow: 4px 5px greenyellow,4px 5px green; */
+
+        }
+
+        /* .card h2{ */
+        /* text-shadow:2px 2px yellow;      Text shadow with x,y offset  */
+        /* text-shadow:2px 2px 2px yellow;  Text shadow with both x,y offset and blur radius*/
+        /* } */
+        /* .card:hover{
+            box-shadow: 5px 5px 4px rgb(45 112 255);
+            margin-top: 15px;
+            margin-left: 10px;
+
+        } */
+        /* p {
+            padding-top: 6px;
+            padding-left: 5px;
+            font-weight: bold;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <p>Hello this is our container</p> -->
+        <div class="card" id="card1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga saepe voluptatum eos deleniti corporis
+                porro illo molestias aperiam, perspiciatis nulla repudiandae numquam esse ratione eaque culpa autem
+                officia praesentium cumque aliquid enim odio! Esse facilis soluta dolores obcaecati atque asperiores,
+                suscipit vitae numquam earum!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga saepe voluptatum eos deleniti corporis
+                porro illo molestias aperiam, perspiciatis nulla repudiandae numquam esse ratione eaque culpa autem
+                officia praesentium cumque aliquid enim odio! Esse facilis soluta dolores obcaecati atque asperiores,
+                suscipit vitae numquam earum!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga saepe voluptatum eos deleniti corporis
+                porro illo molestias aperiam, perspiciatis nulla repudiandae numquam esse ratione eaque culpa autem
+                officia praesentium cumque aliquid enim odio! Esse facilis soluta dolores obcaecati atque asperiores,
+                suscipit vitae numquam earum!</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>card4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga saepe voluptatum eos deleniti corporis
+                porro illo molestias aperiam, perspiciatis nulla repudiandae numquam esse ratione eaque culpa autem
+                officia praesentium cumque aliquid enim odio! Esse facilis soluta dolores obcaecati atque asperiores,
+                suscipit vitae numquam earum!</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

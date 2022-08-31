@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+
+<body>
+    <h2>This is HTML forms Tutorial</h2>
+    <form action="backend.php">
+        <label for="name">Name:</label>  
+        <div>
+            <input type="text" name="my name" id="name">
+        </div>
+        <label for="roll no">roll no:</label>
+        <div>
+            <input type="text" name="my roll" id="roll no">
+        </div>
+        <label for="class">class:</label>
+        <div>
+            <input type="text" name="myclass" id="class">
+        </div>
+        <label for="date">date:</label>
+        <div>
+            <input type="date" name="date" id="date" >
+        </div>
+        <label for="bonus">bonus:</label>
+        <div>
+            <input type="number" name="mybonus" id="bonus">
+        </div>
+        <div>
+            <label for="are u eligible">Are u eligible?:</label>
+            <input type="checkbox" name="myEligibility" id="are u eligible" >
+        </div>
+        <div>
+            Gender:Male<input type="radio" name="myGender" > Female<input type="radio" name="myGender" >
+        </div>
+        <div>
+            write about yourself: <br><textarea  name="name" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="mycar">mycar</label>
+            <select name="mycar" id="mycar">
+                <option value="bmw">BMW</option>
+                <option value="mer">mercedes</option>
+                <option value="ben">Bently</option>
+                <option value="aud">Audi</option>
+                <option value="fer">Ferrari</option>
+                <option value="rol"selected>Rolls Royce</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+
+</body>
+
+</html>

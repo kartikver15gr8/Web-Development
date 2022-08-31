@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables and custom properties</title>
+    <style>
+        .container {
+            width: 700px;
+            display: flex;
+            justify-content: center;       /*  to centre the elements stored in the container */
+            margin: auto;       /* To allign container at center*/
+
+        }
+
+        .box {
+            /* the following syntax is used to assign a variable in CSS as done below */
+            --box-color: rgb(209, 198, 35);
+            /*  here we made a variable in css for background color */
+            --box-shadow: aquamarine;
+            /*  here we made a variable in css for box shadow color */
+
+            /* And basically variables are used to make changes easy and handy for developer */
+
+            width: 97px;
+            height: 93px;
+            background-color: var(--box-color);
+            border: 4px solid rgb(255, 81, 0);
+            box-shadow: 5px 4px var(--box-shadow);
+            margin: 4px 9px;
+            padding: 2px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+</body>
+
+</html>

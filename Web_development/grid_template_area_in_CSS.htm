@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Creating layouts using Grid Template area</title>
+    <style>
+        .layout{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 4fr 1fr; */
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar' 
+            'section section section aside'
+            'footer footer footer  footer' ;
+        }
+        .box{
+            border-radius: 1rem;
+            border: 4px solid rgb(105, 70, 5);
+            background-color: rgb(64, 113, 206);
+            color: rgb(0, 0, 0);
+            margin: 4px;
+            padding: 14px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div id="navbar" class="box">home about contect me</div>
+        <div id="section" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloremque facilis laudantium vero, cupiditate minus perferendis esse quidem magnam magni quod explicabo laborum error iusto voluptate. Illo temporibus minus eum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis suscipit amet nulla, explicabo est esse deserunt accusantium itaque voluptate reprehenderit quod pariatur tempora aut a nisi ex necessitatibus vero. Eos fugiat libero blanditiis debitis quasi facere eius error sunt, minus, ab maiores expedita temporibus! Suscipit architecto voluptas tempora repudiandae a libero illo? Asperiores esse molestiae dignissimos perspiciatis voluptatem, fuga odit aliquid natus laudantium qui ullam placeat fugit modi deleniti minima, minus repudiandae. Minima porro ratione consectetur. Officiis, quo delectus molestiae ex accusamus quis numquam nemo non sequi minus asperiores, temporibus dolor earum rerum!</div>
+        <div id="aside" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ducimus quae accusamus dolor quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis suscipit amet nulla, explicabo est esse deserunt accusantium itaque voluptate reprehenderit quod pariatur tempora aut a nisi ex necessitatibus vero. Eos fugiat libero blanditiis debitis quasi facere eius error sunt, minus, ab maiores expedita temporibus! Suscipit architecto voluptas tempora repudiandae a libero illo? Asperiores esse molestiae dignissimos perspiciatis voluptatem, fuga odit aliquid natus laudantium qui ullam placeat fugit modi deleniti minima, minus repudiandae. Minima porro ratione consectetur. Officiis, quo delectus molestiae ex accusamus quis numquam nemo non sequi minus asperiores, temporibus dolor earum rerum!</div>
+        <div id="footer" class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo dolor neque quam harum illo dolorem consectetur eveniet dolorum ut velit quisquam atque possimus deserunt consequatur quos earum cupiditate, nesciunt beatae. Illo nostrum quam aut blanditiis consequuntur sint sequi, aliquam labore, accusamus recusandae nemo dolore ea. At temporibus harum vero laborum ducimus voluptatibus minima tempore perspiciatis.</div>
+        <!-- <div class="box">my box 1</div>
+        <div class="box">my box 2</div>
+        <div class="box">my box 3</div>
+        <div class="box">my box 4</div>
+        <div class="box">my box 5</div> -->
+        <!-- <div class="box">my box 6</div>
+        <div class="box">my box 7</div>
+        <div class="box">my box 8</div>
+        <div class="box">my box 9</div>
+        <div class="box">my box 10</div>
+        <div class="box">my box 11</div>
+        <div class="box">my box 12</div>
+        <div class="box">my box 13</div>
+        <div class="box">my box 14</div>
+        <div class="box">my box 15</div>
+        <div class="box">my box 16</div>
+        <div class="box">my box 17</div>
+        <div class="box">my box 18</div>
+        <div class="box">my box 19</div>
+        <div class="box">my box 20</div>
+        <div class="box">my box 21</div> -->
+    </div>
+</body>
+</html>
